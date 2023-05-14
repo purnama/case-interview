@@ -4,7 +4,7 @@ configuration:
   scoring:
     command: mvn clean test
     files:
-      - target/customReports/result.xml
+      - target/surefire-reports/TEST-com.astrapay.caseinterview.hidden.HiddenTests.xml
     hidden_files_paths:
       - src/test/java/com/astrapay/caseinterview/hidden
   ide_config:
@@ -14,4 +14,4 @@ configuration:
     project_menu:
       run: mvn clean spring-boot:run
       install: mvn clean install
-      test: "mvn clean test; cat target/customReports/result.txt"
+      test: "mvn clean test; cat target/surefire-reports/TEST-com.astrapay.caseinterview.hidden.HiddenTests.xml"
